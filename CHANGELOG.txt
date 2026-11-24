@@ -1,0 +1,77 @@
+﻿MEU MÊS - HISTÓRICO DE VERSÕES
+
+v1.9.0
+- Categorias fixas podem ser DESATIVADAS e REATIVADAS quando o usuário quiser (Planejamento > Orçamento por
+  categoria): ícone de olho riscado ao lado do nome. "Outros" não pode ser desativada.
+- Categoria desativada some do orçamento e da lista ao adicionar conta/compra. Ao editar uma conta que já usa
+  uma categoria desativada, a categoria continua aparecendo para não perder o valor.
+- Lançamentos antigos continuam somando normalmente nos totais, resumo e gráficos.
+- Bloco "Categorias desativadas (N)" no fim do orçamento, com botão "Reativar" em cada uma e "Reativar todas".
+- A escolha vai no backup e no restaurar.
+v1.8.0
+- Planejamento > Orçamento por categoria: botão "+ Categoria" para criar categorias próprias (nome + ícone
+  entre 26 opções do Tabler). Categorias criadas podem ser editadas (lápis) e excluídas (lixeira).
+  Ao excluir, as contas e compras daquela categoria passam para "Outros".
+- As novas categorias aparecem ao adicionar conta/compra, no orçamento, no resumo por categoria,
+  nos gráficos do Resumo, no CSV e no backup.
+- Botão "Escolher arquivo" do Restaurar backup redesenhado (mesmo estilo dos demais botões, com o nome do arquivo).
+- Novos ícones disponíveis: carrinho, escola, presente, avião, camisa, halter, celular, carrinho de bebê.
+v1.7.0
+- Adicionar/editar receita agora tem o bloco de recebimento, igual ao de pagamento das contas:
+  Situação (Prevista/Recebida), Forma de recebimento (PIX, Transferência, Depósito em conta, Dinheiro,
+  Boleto, Cartão, Cheque, Outro) e Data do recebimento (aparece quando Recebida, já com a data de hoje).
+- Na lista de receitas aparecem a forma e a data (ex.: "PIX · recebida em 23/11/2026").
+- Marcar recebida pelo botão de check registra a data de hoje; desmarcar limpa a data.
+- Receitas recorrentes no mês seguinte nascem previstas, sem data (a forma de recebimento é mantida).
+- CSV com a forma e a data também para receitas.
+v1.6.0
+- Novos ícones do Meu Mês (carteira com moeda e cédula, fundo azul-petróleo), do pacote MeuMes_Icones_Windows_Android:
+  ícones do aplicativo instalado (192, 512 e maskable), ícone do iPhone (180, sem transparência),
+  favicon (16 e 32) e MeuMes.ico (Windows).
+- A logo aparece no topo do app (embutida no index.html, funciona também abrindo o arquivo direto).
+- Favicon da aba embutido no index.html.
+- Tela de abertura do aplicativo instalado na cor do ícone.
+- Ajuste visual no card Resumo em telas largas.
+v1.5.0
+- Visão geral: novo card "Resumo" com o comparativo do mês atual e do mês anterior
+  (Receitas, Despesas e Total, com um anel de proporção em cada mês).
+- Tocando no card abre a tela "Resumo" com gráficos em rosca:
+  - Despesas por categoria (inclui a fatura do cartão), com porcentagem, valor e total;
+  - Receitas por origem;
+  - navegação entre meses (setas) e comparação com o mês anterior.
+- Despesas = contas do mês + parcelas do cartão; Receitas = receitas lançadas no mês.
+v1.4.0
+- Volta a ser instalável pelo Chrome do Android quando o app é publicado em https (GitHub Pages):
+  manifesto, ícones e service worker incluídos no pacote (index.html, manifest.json, service-worker.js, icons).
+- O modo "abrir o index.html direto do zip" continua funcionando: o manifesto e o service worker
+  só são ligados quando o endereço é http/https.
+- Faixa "Instalar o Meu Mês" no topo e card em Ajustes > Instalar no celular (quando o Chrome libera a instalação).
+v1.3.0
+- Adicionar/editar conta agora tem o bloco de pagamento: Situação (Pendente/Paga), Forma de pagamento
+  (Dinheiro, PIX, Débito em conta, Cartão de crédito, Boleto, Transferência, Outro) e Data do pagamento
+  (aparece quando a conta está Paga, já preenchida com a data de hoje).
+- Na lista de contas aparecem a forma e a data do pagamento (ex.: "PIX · paga em 23/11/2026").
+- Ao marcar paga pelo botão de check, a data de hoje é registrada; ao desmarcar, é limpa.
+- Contas repetidas no mês seguinte nascem pendentes, sem data de pagamento (a forma de pagamento é mantida).
+- Exportação CSV com as colunas Forma de pagamento e Data do pagamento.
+- Na Visão geral, os totais (Receitas, Contas, Saldo livre, Já pago, Falta pagar) ficam lado a lado no celular.
+- Ícones trocados pelos do Tabler Icons (https://tabler.io/icons, licença MIT).
+v1.2.0
+- Agora é um arquivo único (index.html com tudo dentro): funciona abrindo direto do zip extraído,
+  no Android e no computador, sem servidor e sem internet.
+- Corrige o app não abrir no celular (dependia da pasta lib e de arquivos externos).
+- Aviso na tela se o navegador não estiver guardando os dados; o app continua usável na memória.
+- Em Ajustes, no modo arquivo, mostra orientação de uso em vez do botão Instalar.
+
+v1.1.0
+- Cores do FinForme, backup em arquivo e CSV, preparo para instalação (exige https).
+
+v1.0.0
+- Versão inicial.
+
+
+
+
+
+
+

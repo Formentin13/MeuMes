@@ -1,0 +1,29 @@
+﻿MEU MÊS v1.9.0 - controle financeiro pessoal
+
+O app inteiro está no arquivo index.html e funciona de DOIS jeitos:
+
+JEITO 1 - ABRIR O ARQUIVO (sem internet, sem site, sem instalar)
+1) Extraia o .zip (no Android, use o app "Arquivos").
+2) Toque em index.html e escolha o Chrome. Se não abrir, digite no Chrome:
+       file:///storage/emulated/0/Download/meumes-app/index.html
+   (troque "Download/meumes-app" pela pasta onde extraiu). No computador: dois cliques no index.html.
+3) Abra sempre pelo MESMO navegador e pelo MESMO arquivo: os dados ficam guardados no navegador.
+   Use Ajustes > Baixar backup de vez em quando.
+Neste jeito NÃO existe a opção "Instalar app" (o Chrome só instala sites em endereço https).
+
+JEITO 2 - INSTALAR COMO APLICATIVO NO ANDROID (precisa publicar em https, como o FinForme)
+1) No GitHub, crie um repositório (ex.: MeuMes) e envie estes arquivos: index.html, manifest.json,
+   service-worker.js e a PASTA icons (arraste a pasta icons separadamente, com os arquivos dentro).
+2) Settings > Pages > Deploy from a branch > main > / (root) > Save. Espere 1 a 2 minutos.
+3) O link fica https://SEU-USUARIO.github.io/MeuMes/
+4) No Chrome do Android, abra o link. Aparece a faixa "Instalar o Meu Mês" (toque em Instalar).
+   Se não aparecer, toque nos três pontinhos do Chrome e escolha "Instalar app".
+5) Passe o link a quem for usar. Cada pessoa tem os próprios dados no próprio aparelho.
+iPhone (Safari): abra o link, Compartilhar > Adicionar à Tela de Início.
+
+BACKUP: Ajustes > Baixar backup (arquivo) e Exportar CSV. Para recuperar: Ajustes > Restaurar backup.
+
+
+
+
+
