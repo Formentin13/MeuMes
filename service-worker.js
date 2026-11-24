@@ -1,10 +1,11 @@
-﻿// Só é registrado quando o app está publicado em https (instalação pelo Chrome).
+// Só é registrado quando o app está publicado em https (instalação pelo Chrome).
 // Abrindo o index.html direto do arquivo, o app funciona sem service worker.
-const CACHE = "meumes-v1.9.0";
+const CACHE = "meumes-v1.9.1";
 const FILES = ["./", "./index.html", "./manifest.json",
-  "./icons/icon-192.png", "./icons/icon-512.png", "./icons/icon-512-maskable.png", "./icons/apple-touch-icon.png", "./icons/favicon-32.png", "./icons/icon-16.png", "./icons/MeuMes.ico"];
+  "./icon-192.png", "./icon-512.png", "./icon-512-maskable.png", "./apple-touch-icon.png", "./favicon-32.png", "./icon-16.png", "./MeuMes.ico"];
 self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
+  // um arquivo ausente não pode impedir a instalação do service worker
+  e.waitUntil(caches.open(CACHE).then((c) => Promise.all(FILES.map((f) => c.add(f).catch(() => {})))).then(() => self.skipWaiting()));
 });
 self.addEventListener("activate", (e) => {
   e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
@@ -17,4 +18,3 @@ self.addEventListener("fetch", (e) => {
       .catch(() => caches.match(e.request).then((r) => r || (e.request.mode === "navigate" ? caches.match("./index.html") : undefined)))
   );
 });
-

@@ -1,5 +1,10 @@
 ﻿MEU MÊS - HISTÓRICO DE VERSÕES
 
+v1.9.1
+- Corrige "Não é possível instalar o app" no Chrome do Android: os ícones agora ficam na mesma pasta do
+  index.html (sem a subpasta icons), o que evita o erro 404 quando os arquivos são enviados ao GitHub
+  pelo navegador (a pasta icons era achatada e os ícones não eram encontrados).
+- O service worker não deixa mais de instalar se um arquivo estiver ausente.
 v1.9.0
 - Categorias fixas podem ser DESATIVADAS e REATIVADAS quando o usuário quiser (Planejamento > Orçamento por
   categoria): ícone de olho riscado ao lado do nome. "Outros" não pode ser desativada.
@@ -68,6 +73,7 @@ v1.1.0
 
 v1.0.0
 - Versão inicial.
+
 
 
 

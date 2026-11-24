@@ -1,6 +1,6 @@
-﻿MEU MÊS v1.9.0 - controle financeiro pessoal
+﻿MEU MÊS v1.9.1 - controle financeiro pessoal
 
-O app inteiro está no arquivo index.html e funciona de DOIS jeitos:
+O app inteiro está em index.html e funciona de DOIS jeitos:
 
 JEITO 1 - ABRIR O ARQUIVO (sem internet, sem site, sem instalar)
 1) Extraia o .zip (no Android, use o app "Arquivos").
@@ -11,19 +11,14 @@ JEITO 1 - ABRIR O ARQUIVO (sem internet, sem site, sem instalar)
    Use Ajustes > Baixar backup de vez em quando.
 Neste jeito NÃO existe a opção "Instalar app" (o Chrome só instala sites em endereço https).
 
-JEITO 2 - INSTALAR COMO APLICATIVO NO ANDROID (precisa publicar em https, como o FinForme)
-1) No GitHub, crie um repositório (ex.: MeuMes) e envie estes arquivos: index.html, manifest.json,
-   service-worker.js e a PASTA icons (arraste a pasta icons separadamente, com os arquivos dentro).
-2) Settings > Pages > Deploy from a branch > main > / (root) > Save. Espere 1 a 2 minutos.
-3) O link fica https://SEU-USUARIO.github.io/MeuMes/
-4) No Chrome do Android, abra o link. Aparece a faixa "Instalar o Meu Mês" (toque em Instalar).
-   Se não aparecer, toque nos três pontinhos do Chrome e escolha "Instalar app".
-5) Passe o link a quem for usar. Cada pessoa tem os próprios dados no próprio aparelho.
+JEITO 2 - INSTALAR COMO APLICATIVO NO ANDROID (publicar no GitHub Pages)
+1) No GitHub, crie um repositório PÚBLICO (ex.: MeuMes).
+2) Add file > Upload files. Arraste TODOS os arquivos desta pasta, soltos (NÃO há pasta de ícones):
+   index.html, manifest.json, service-worker.js, icon-16.png, icon-192.png, icon-512.png,
+   icon-512-maskable.png, apple-touch-icon.png, favicon-32.png e MeuMes.ico. Commit changes.
+3) Settings > Pages > Deploy from a branch > main > / (root) > Save. Espere 1 a 2 minutos.
+4) Link: https://SEU-USUARIO.github.io/MeuMes/
+5) No Chrome do Android, abra o link e toque em "Instalar" na faixa azul (ou nos três pontinhos > Instalar app).
 iPhone (Safari): abra o link, Compartilhar > Adicionar à Tela de Início.
 
 BACKUP: Ajustes > Baixar backup (arquivo) e Exportar CSV. Para recuperar: Ajustes > Restaurar backup.
-
-
-
-
-
