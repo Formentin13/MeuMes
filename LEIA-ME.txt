@@ -1,4 +1,4 @@
-﻿MEU MÊS v1.9.1 - controle financeiro pessoal
+﻿MEU MÊS v1.9.2 - controle financeiro pessoal
 
 O app inteiro está em index.html e funciona de DOIS jeitos:
 
@@ -22,3 +22,4 @@ JEITO 2 - INSTALAR COMO APLICATIVO NO ANDROID (publicar no GitHub Pages)
 iPhone (Safari): abra o link, Compartilhar > Adicionar à Tela de Início.
 
 BACKUP: Ajustes > Baixar backup (arquivo) e Exportar CSV. Para recuperar: Ajustes > Restaurar backup.
+

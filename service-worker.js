@@ -1,6 +1,6 @@
 // Só é registrado quando o app está publicado em https (instalação pelo Chrome).
 // Abrindo o index.html direto do arquivo, o app funciona sem service worker.
-const CACHE = "meumes-v1.9.1";
+const CACHE = "meumes-v1.9.2";
 const FILES = ["./", "./index.html", "./manifest.json",
   "./icon-192.png", "./icon-512.png", "./icon-512-maskable.png", "./apple-touch-icon.png", "./favicon-32.png", "./icon-16.png", "./MeuMes.ico"];
 self.addEventListener("install", (e) => {
